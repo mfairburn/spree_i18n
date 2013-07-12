@@ -40,8 +40,8 @@ en-GB:
         ip_address: IP Address
         item_total: Item Total
         number: Number
-        payment_state: Payment County
-        shipment_state: Shipment County
+        payment_state: Payment State
+        shipment_state: Shipment State
         special_instructions: Special Instructions
         state: County
         total: Total
