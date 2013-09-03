@@ -18,6 +18,7 @@ zh-CN:
         name: 名称
         numcode: ISO编号
       spree/credit_card:
+        base: 
         cc_type: 信用卡类型
         month: 月份
         number: 卡号
@@ -34,7 +35,7 @@ zh-CN:
       spree/order:
         checkout_complete: 完成结账
         completed_at: 结账日期
-        coupon_code: 
+        coupon_code: 优惠券号码
         created_at: 下单日期
         email: 电子邮件
         ip_address: IP地址
@@ -126,6 +127,12 @@ zh-CN:
       spree/zone:
         description: 描述
         name: 名称
+    errors:
+      models:
+        spree/credit_card:
+          attributes:
+            base:
+              card_expired: 
     models:
       spree/address:
         one: 地址
@@ -286,6 +293,14 @@ zh-CN:
           delivery_error: 测试邮件发送失败
           delivery_success: 测试邮件发送成功
           error: ! '测试邮件错误: %{e}'
+      tab:
+        configuration: 
+        orders: 
+        overview: 
+        products: 
+        promotions: 
+        reports: 
+        users: 
     administration: 管理
     agree_to_privacy_policy: 同意隐私政策
     agree_to_terms_of_service: 同意服务条款
@@ -305,7 +320,7 @@ zh-CN:
     analytics_desc_list_1: 
     analytics_desc_list_2: 仅需要一个免费的Spree帐号用于激活
     analytics_desc_list_3: 
-    analytics_desc_list_4: 
+    analytics_desc_list_4: 完全免费
     analytics_trackers: 追踪分析
     and: 以及
     are_you_sure: 你确定么？
@@ -344,6 +359,7 @@ zh-CN:
     back_to_users_list: 回到用户列表
     back_to_zones_list: 回到区域列表
     backorderable: 可预订
+    backorders_allowed: 
     balance_due: 尚欠款
     bill_address: 账单地址
     billing: 账单
@@ -404,7 +420,7 @@ zh-CN:
     coupon_code_better_exists: 
     coupon_code_expired: 优惠券号码已过期
     coupon_code_max_usage: 优惠券号码使用次数超出限制
-    coupon_code_not_eligible: 
+    coupon_code_not_eligible: 您的订单号码无法在您的订单上生效。
     coupon_code_not_found: 您所输入的优惠券号码不存在。请重新输入。
     create: 创建
     create_a_new_account: 创建一个新帐号
@@ -429,6 +445,7 @@ zh-CN:
       jirafe:
         app_id: 
         app_token: 添加口令
+        currently_unavailable: 
         explanation: 
         header: Jirafe分析器设置
         site_id: 
@@ -437,6 +454,7 @@ zh-CN:
     date: 日期
     date_completed: 完成日期
     date_picker:
+      first_day: 
       format: ! '%Y/%m/%d'
       js_format: yy/mm/dd
     date_range: 时间范围
@@ -535,9 +553,9 @@ zh-CN:
     hide_cents: 隐藏分钱
     home: 首页
     i18n:
-      available_locales: 
-      fields: 
-      language: 
+      available_locales: 可用的语言
+      fields: 好友
+      language: 语言
       localization_settings: 
       only_complete: 
       only_incomplete: 
@@ -558,6 +576,7 @@ zh-CN:
     insufficient_stock: 库存不足，当前还剩下%{on_hand}件库存
     intercept_email_address: 用于接收邮件的邮箱地址
     intercept_email_instructions: 使用以下邮箱地址覆盖所有收件人邮箱
+    internal_name: 
     invalid_payment_provider: 无效的支付服务提供商。
     invalid_promotion_action: 无效的优惠方式。
     invalid_promotion_rule: 无效的促销规则。
@@ -573,6 +592,7 @@ zh-CN:
       operators:
         gt: 大于
         gte: 大于或等于
+    items_cannot_be_shipped: 
     jirafe: Jirafe
     landing_page_rule:
       path: Path
@@ -651,11 +671,13 @@ zh-CN:
     no_actions_added: 未添加动作
     no_orders_found: 找不到任何订单
     no_payment_methods_found: 找不到任何支付方式
+    no_pending_payments: 
     no_products_found: 找不到产品
     no_promotions_found: 找不到任何促销活动
     no_results: 无任何结果
     no_rules_added: 未添加规则
     no_shipping_methods_found: 找不到任何配送方式
+    no_stock_locations_found: 
     no_trackers_found: 找不到任何追踪器
     no_tracking_present: 未提供跟踪细节。
     none: 没有
@@ -675,6 +697,7 @@ zh-CN:
     open: 打开
     open_all_adjustments: 启用所有价格调整
     option_type: 选项类型
+    option_type_placeholder: 
     option_types: 选项类型
     option_value: 选项值
     option_values: 选项值
@@ -942,6 +965,7 @@ zh-CN:
     smtp_username: SMTP用户名
     source: 
     special_instructions: 特别说明
+    split: 
     spree/order:
       coupon_code: 优惠券号码
     spree_gateway_error_flash_for_checkout: 您的支付信息存在错误。请检查您的信息后再次尝试。
@@ -956,6 +980,7 @@ zh-CN:
     stock_location_info: 
     stock_locations: 
     stock_management: 
+    stock_management_requires_a_stock_location: 
     stock_movements: 
     stock_movements_for_stock_location: 
     stock_successfully_transferred: 
@@ -995,6 +1020,7 @@ zh-CN:
         subject: 测试邮件
     test_mode: 测试模式
     thank_you_for_your_order: 感谢您的订购，请打印这张订单作为购买凭证。
+    there_are_no_items_for_this_order: 
     there_were_problems_with_the_following_fields: 以下字段存在错误
     thumbnail: 缩略图
     time: 时间
@@ -1034,6 +1060,7 @@ zh-CN:
       must_be_non_negative: 不能为负数
     value: 价值
     variant: 具体型号
+    variant_placeholder: 
     variants: 具体型号
     version: 版本
     void: 作废

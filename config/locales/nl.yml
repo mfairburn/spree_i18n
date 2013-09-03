@@ -18,6 +18,7 @@ nl:
         name: Naam
         numcode: ISO Code
       spree/credit_card:
+        base: 
         cc_type: Type
         month: Maand
         number: Nummer
@@ -34,7 +35,7 @@ nl:
       spree/order:
         checkout_complete: Bestelling afgerond
         completed_at: Voltooid op
-        coupon_code: 
+        coupon_code: Kortingscode
         created_at: Order Datum
         email: Klant E-mail
         ip_address: IP adres
@@ -126,6 +127,12 @@ nl:
       spree/zone:
         description: Omschrijving
         name: Naam
+    errors:
+      models:
+        spree/credit_card:
+          attributes:
+            base:
+              card_expired: 
     models:
       spree/address:
         one: Adres
@@ -288,6 +295,14 @@ nl:
           delivery_error: Probleem met het afleveren van de Test Mail
           delivery_success: Test Mail succesvol verstuurd
           error: ! 'Test Mail fout: %{e}'
+      tab:
+        configuration: Configuratie
+        orders: Bestellingen
+        overview: Overzicht
+        products: Producten
+        promotions: Promoties
+        reports: Rapportages
+        users: 
     administration: Administratie
     agree_to_privacy_policy: ! 'Akkoord met Privacy beleid  '
     agree_to_terms_of_service: Akkoord met Algemene Voorwaarden
@@ -346,6 +361,7 @@ nl:
     back_to_users_list: Terug naar gebruikers lijst
     back_to_zones_list: Terug Naar Zones Lijst
     backorderable: Na bestelbaar
+    backorders_allowed: 
     balance_due: Te betalen
     bill_address: Factuuradres
     billing: Factuur
@@ -369,7 +385,7 @@ nl:
     checkout: Bestelling
     choose_a_customer: Kies een klant
     choose_currency: Kies een valuta
-    choose_dashboard_locale: Kies dashboard taal
+    choose_dashboard_locale: Kies dashboard regio-instelling
     city: Stad
     clone: Dupliceren
     close: Sluiten
@@ -431,6 +447,7 @@ nl:
       jirafe:
         app_id: App ID
         app_token: App Token
+        currently_unavailable: 
         explanation: De onderstaande velden kunnen al ingevuld zijn als je via het dashboard hebt gekozen om te registreren met Jirafe.
         header: Jirafe Analytics Instellingen
         site_id: 
@@ -439,6 +456,7 @@ nl:
     date: Datum
     date_completed: Datum Volledig
     date_picker:
+      first_day: 
       format: ! '%d/%m/%Y'
       js_format: dd/mm/yy
     date_range: Datum bereik
@@ -537,17 +555,17 @@ nl:
     hide_cents: Verberg centen
     home: Home
     i18n:
-      available_locales: 
-      fields: 
-      language: 
-      localization_settings: 
-      only_complete: 
-      only_incomplete: 
-      select_locale: 
-      show_only: 
-      supported_locales: 
+      available_locales: Beschikbare regio-instellingen
+      fields: Velden
+      language: Taal
+      localization_settings: Regio-instellingen
+      only_complete: Enkel volledige
+      only_incomplete: Enkel onvolledige
+      select_locale: Selecteer regio-instelling
+      show_only: Toon enkel
+      supported_locales: Ondersteunde regio-instellingen
       this_file_language: Nederlands (NL)
-      translations: 
+      translations: Vertalingen
     icon: Icoon
     image: Afbeelding
     image_settings: Afbeeldingen Instellingen
@@ -560,6 +578,7 @@ nl:
     insufficient_stock: Onvoldoende voorraad beschikbaar, enkel %{on_hand} beschikbaar
     intercept_email_address: E-mailadres opvangen
     intercept_email_instructions: Ontvanger van de e-mail overschrijven met dit e-mail adres.
+    internal_name: 
     invalid_payment_provider: ! 'Ongeldige betalingsprovider. '
     invalid_promotion_action: Ongeldige promotie actie.
     invalid_promotion_rule: Ongeldige promotie regel.
@@ -575,6 +594,7 @@ nl:
       operators:
         gt: groter dan
         gte: groter dan of gelijk aan
+    items_cannot_be_shipped: 
     jirafe: Jirafe
     landing_page_rule:
       path: Pad
@@ -589,7 +609,7 @@ nl:
     listing_tax_categories: Lijst BTW categorieën
     listing_users: Lijst gebruikers
     loading: Bezig met laden
-    locale_changed: Taal instellingen gewijzigd
+    locale_changed: Regio instelling gewijzigd
     location: Locatie
     lock: Vergrendel
     logged_in_as: Ingelogd als
@@ -653,11 +673,13 @@ nl:
     no_actions_added: Geen acties toegevoegd
     no_orders_found: Geen bestellingen gevonden
     no_payment_methods_found: Geen betaal methodes gevonden
+    no_pending_payments: 
     no_products_found: Geen producten gevonden
     no_promotions_found: Geen promoties gevonden
     no_results: Geen resultaten
     no_rules_added: Geen regels toegevoegd
     no_shipping_methods_found: Geen verzend methodes gevonden
+    no_stock_locations_found: 
     no_trackers_found: Geen Trackers Gevonden
     no_tracking_present: Geen Tracking details opgegeven.
     none: Geen
@@ -677,6 +699,7 @@ nl:
     open: Open
     open_all_adjustments: Open Alle Aanpassingen
     option_type: Option type
+    option_type_placeholder: 
     option_types: Types opties
     option_value: Option value
     option_values: Opties waardes
@@ -944,6 +967,7 @@ nl:
     smtp_username: SMTP Gebruikersnaam
     source: Bron
     special_instructions: Speciale instructies
+    split: 
     spree/order:
       coupon_code: Kortings Code
     spree_gateway_error_flash_for_checkout: Er was een probleem met je betaal gegevens. Controleer je gegevens en probeer het opnieuw.
@@ -958,6 +982,7 @@ nl:
     stock_location_info: Voorraad locatie info
     stock_locations: Voorraad Locaties
     stock_management: Voorraad Management
+    stock_management_requires_a_stock_location: 
     stock_movements: Voorraad Verplaatsing
     stock_movements_for_stock_location: Voorraad Verplaatsing voor %{stock_location_name}
     stock_successfully_transferred: Voorraad was succesvol verplaatst tussen locaties.
@@ -997,6 +1022,7 @@ nl:
         subject: Test Mail
     test_mode: Test modus
     thank_you_for_your_order: Hartelijk dank voor je bestelling. Je kan deze pagina afdrukken als bewijs van bestelling.
+    there_are_no_items_for_this_order: 
     there_were_problems_with_the_following_fields: Er zijn problemen met de volgende velden
     thumbnail: Thumbnail
     time: Tijd
@@ -1036,6 +1062,7 @@ nl:
       must_be_non_negative: moet een niet-negatief getal zijn
     value: Waarde
     variant: Variant
+    variant_placeholder: 
     variants: Varianten
     version: Versie
     void: Ongeldig
